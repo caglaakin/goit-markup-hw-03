@@ -1,0 +1,253 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #FFFFFF;
+    color: #434455;
+}
+
+.container{
+    flex-basis: 1158px;
+    flex-grow: 1;
+}
+
+.logo{
+    font-family: "Raleway" , sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.span-header{
+    color:#2E2F42;
+}
+.span-footer{
+    color:#F4F4FD;
+}
+
+header nav ul li{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header-menu {
+    display: flex;
+    position: fixed;
+    background-color: #FFFFFF;
+    width:  100%;
+    top:0;
+}
+
+.header-menu nav{
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu-list-nav{
+    color: #2E2F42;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.menu-list-nav:hover{
+    color:#404BBF;
+}
+a.menu-list-nav:focus{
+    color: #404BBF;
+}
+
+a.logo,
+span.span-header {
+    align-content: center;
+}
+
+.header-add{
+    font-style: normal;
+}
+
+.menu-list-add{
+    text-decoration: none;
+    list-style-type: none;
+    color: #434455;
+}
+a.menu-list-add:hover {
+    color: #404BBF;
+}
+
+a.menu-list-add:focus{
+    color: #404BBF;
+}
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-entrance{
+    background-color: #2E2F42;
+    text-align: center;
+}
+
+.section-features{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.section-features ul li{
+    display: inline-block;
+}
+
+.section-features .header-two{
+    display: none;
+}
+
+.feature-list {
+    margin: 0 auto;
+    padding-inline-start: 0;
+    padding: auto;
+    text-align: center;
+}
+
+.feature-list .feature {
+    width: 264px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: left;
+}
+
+.section-team{
+    background-color: #F4F4FD;
+}
+
+.team-members{
+    text-align: center;
+}
+
+.member{
+    background-color: #FFFFFF;
+    width: 264px;
+    display: inline-block;
+    box-shadow: 0.5px 1px 0.5px 0.5px #ddd;
+    margin: 12px;
+    border-radius: 4px;
+}
+
+.member img{
+    max-width: 100%;
+}
+
+.member-text{
+    gap: 8px;
+}
+
+.portfolio-list{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-list-item{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+    margin: 12px;
+}
+
+.portfolio-list-item img {
+    max-width: 100%;
+}
+
+.portfolio-list-item-text{
+    text-align: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+}
+
+.header-one{
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+button.order-button{
+    background-color: #4D5AE5;
+    
+}
+
+button.order-button:hover{
+    background-color: #404BBF;
+}
+
+button.order-button:focus{
+    background-color: #404BBF;
+}
+
+.header-two{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.header-three{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+footer {
+    background-color: #2E2F42;
+    display: flex;
+    padding: 100px;
+}
+
+.footer-text{
+    width: 264px;
+}
+
+.footer .paragraph{
+    color: #F4F4FD;
+}
