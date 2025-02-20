@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -21,6 +31,8 @@ body{
     color: #4D5AE5;
     text-transform: uppercase;
     text-decoration: none;
+    margin-left: 156px;
+    margin-right: 0;
 }
 .span-header{
     color:#2E2F42;
@@ -29,7 +41,7 @@ body{
     color:#F4F4FD;
 }
 
-header nav ul li{
+.header-menu .header-nav ul li{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -37,22 +49,35 @@ header nav ul li{
     letter-spacing: 0.02em;
 }
 
-header ul li{
+.header-menu ul li{
     list-style-type: none;
-    display: inline-block;
 }
 
 .header-menu {
     display: flex;
     position: fixed;
+    flex-direction: row;
     background-color: #FFFFFF;
     width:  100%;
-    top:0;
+    border-bottom: 1px solid #2E2F42;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.header-menu nav{
+.header-menu .header-nav{
     display: flex;
+    flex-direction: row;
     flex-grow: 1;
+}
+
+.list-nav{
+    margin-left: 76px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .menu-list-nav{
@@ -73,8 +98,17 @@ span.span-header {
     align-content: center;
 }
 
-.header-add{
+.header-menu .header-add{
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-add {
+    margin-right: 156px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .menu-list-add{
@@ -98,6 +132,10 @@ a.menu-list-add:focus{
 .section-entrance{
     background-color: #2E2F42;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    border-bottom: 1px solid #2E2F42;
 }
 
 .section-features{
@@ -109,39 +147,46 @@ a.menu-list-add:focus{
     display: inline-block;
 }
 
-.section-features .header-two{
-    display: none;
-}
-
 .feature-list {
     margin: 0 auto;
     padding-inline-start: 0;
-    padding: auto;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .feature-list .feature {
     width: 264px;
     margin: 0 auto;
-    padding: 12px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .section-team{
     background-color: #F4F4FD;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .team-members{
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: 0 auto;
 }
 
 .member{
     background-color: #FFFFFF;
-    width: 264px;
-    display: inline-block;
+    width: auto;
     box-shadow: 0.5px 1px 0.5px 0.5px #ddd;
-    margin: 12px;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
 }
 
 .member img{
@@ -149,6 +194,9 @@ a.menu-list-add:focus{
 }
 
 .member-text{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
     gap: 8px;
 }
 
@@ -158,12 +206,22 @@ a.menu-list-add:focus{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 24px;
+}
+
+.section-portfolio .portfolio-list{
+    margin-bottom: 48px;
+    margin-top: 72px;
 }
 
 .portfolio-list-item{
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     border-bottom: 1px solid #ddd;
-    margin: 12px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .portfolio-list-item img {
@@ -174,7 +232,9 @@ a.menu-list-add:focus{
     text-align: left;
     padding-top: 32px;
     padding-bottom: 32px;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .header-one{
@@ -184,10 +244,10 @@ a.menu-list-add:focus{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     width: 496px;
     display: flex;
-    margin: 0 auto;
+    align-self: center;
+    margin-top: 140px;
 }
 
 button{
@@ -198,14 +258,21 @@ button{
     letter-spacing: 0.04em;
     cursor: pointer;
     color: #FFFFFF;
+    
 }
 
 button.order-button{
     background-color: #4D5AE5;
-    width: 169px;
-    padding: 32px 16px;
+    width: 100½;
+    height: auto;
+    padding: 16px 32px;
+    border-width: 1px;
     border-radius: 4px;
-    
+    display: flex;
+    align-self: center;
+    gap: 10px;
+    margin-bottom: 68px;
+
 }
 
 button.order-button:hover{
@@ -225,6 +292,10 @@ button.order-button:focus{
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+}
+
+.visually-hidden{
+    display: none;
 }
 
 .header-three{
@@ -247,13 +318,23 @@ button.order-button:focus{
 footer {
     background-color: #2E2F42;
     display: flex;
+    flex-direction: column;
     padding: 100px;
+    padding-left: 156px;
 }
 
 .footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     width: 264px;
+}
+
+.footer .logo{
+    margin: 0 0;
 }
 
 .footer .paragraph{
     color: #F4F4FD;
 }
+
