@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+img{
+    display: block;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -46,7 +50,7 @@ body {
 .container{
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15 px;
+    padding: 0 15px;
 }
 
 .section{
@@ -144,6 +148,7 @@ a.menu-list-add:focus {
 
 .section-entrance {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .header-one {
@@ -189,7 +194,16 @@ button.order-button:focus {
 /* section-features start */
 
 .visually-hidden{
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-list{
@@ -224,6 +238,7 @@ button.order-button:focus {
 .team-members{
     display: flex;
     gap: 24px;
+    margin-top: 72px;
     list-style-type: none;
 }
 
