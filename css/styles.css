@@ -107,6 +107,7 @@ header ul{
 .menu-list-nav {
     color: #2E2F42;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 a.menu-list-nav:hover {
